@@ -1,35 +1,55 @@
+---
+const projects = [
+  {
+    title: 'Memardo',
+    subtitle: 'Generador de memes',
+    body: 'Aplicación para generar memes. Desarrollada con React + Tailwind CSS',
+    web: 'https://memardo.vercel.app',
+    github: 'https://memardo.vercel.app',
+    imgDesktop: 'memardo-desktop.webp',
+    imgMobile: 'memardo-mobile.webp',
+  },
+]
+---
+
 <section class='mb-16 flex flex-col gap-8' id='projects'>
   <h2 class='text-4xl font-bold'>Proyectos</h2>
-  <article
-    class='bg-[#191919] flex p-8 rounded-md md:flex-row flex-col-reverse'
-  >
-    <div class='flex-1'>
-      <h3 class='text-2xl'>Memardo</h3>
-      <p class='text-gray-300 mb-4'>Generador de memes</p>
-      <p class='text-gray-300 mb-8'>
-        Aplicación para generar memes. Desarrollada con React + Tailwind CSS
-      </p>
-      <div class='flex gap-8 text-gray-300'>
-        <a
-          class='flex gap-2 items-center border border-gray-300 py-1 px-3 rounded-md'
-          href=''><img src='images/logos/web-logo.svg' class='h-4 w-4' /> Web</a
-        >
-        <a
-          class='flex gap-2 items-center border border-gray-300 py-1 px-3 rounded-md'
-          href=''
-          ><img src='images/logos/github-logo.svg' class='h-4 w-4' />Repo</a
-        >
-      </div>
-    </div>
-    <div class='flex-1 relative'>
-      <img
-        src='images/projects/memardo-desktop.webp'
-        class='object-cover h-48 border-2 border-gray-300 rounded-md mb-6 mx-auto'
-      />
-      <img
-        src='images/projects/memardo-mobile.webp'
-        class='object-contain h-28 border-2 border-gray-300 rounded-lg absolute bottom-0 right-4'
-      />
-    </div>
-  </article>
+  {
+    projects.map((project) => (
+      <article class='bg-[#191919] flex p-8 rounded-md md:flex-row flex-col-reverse'>
+        <div class='flex-1'>
+          <h3 class='text-2xl'>{project.title}</h3>
+          <p class='text-gray-300 mb-4'>{project.subtitle}</p>
+          <p class='text-gray-300 mb-8'>{project.body}</p>
+          <div class='flex gap-8 text-gray-300'>
+            <a
+              class='flex gap-2 items-center border border-gray-300 py-1 px-3 rounded-md'
+              href={project.web}
+              target='_blank'
+            >
+              <img src='images/logos/web-logo.svg' class='h-4 w-4' /> Web
+            </a>
+            <a
+              class='flex gap-2 items-center border border-gray-300 py-1 px-3 rounded-md'
+              href={project.github}
+              target='_blank'
+            >
+              <img src='images/logos/github-logo.svg' class='h-4 w-4' />
+              Repo
+            </a>
+          </div>
+        </div>
+        <div class='flex-1 relative'>
+          <img
+            src={`images/projects/${project.imgDesktop}`}
+            class='object-cover h-48 border-2 border-gray-300 rounded-md mb-6 mx-auto'
+          />
+          <img
+            src={`images/projects/${project.imgMobile}`}
+            class='object-contain h-28 border-2 border-gray-300 rounded-lg absolute bottom-0 right-4'
+          />
+        </div>
+      </article>
+    ))
+  }
 </section>
