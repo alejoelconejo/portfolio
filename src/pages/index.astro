@@ -1,25 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Card from '../components/Card.astro'
 import Header from '../components/Header.astro'
+import Hero from '../components/Hero.astro'
+import Projects from '../components/Projects.astro'
+import Experience from '../components/Experience.astro'
+import ContactForm from '../components/ContactForm.astro'
 ---
 
 <Layout title='Alejo Hernán Janin'>
   <Header />
-  <main class='max-w-4xl mx-auto flex flex-col gap-8'>
-    <section>
-      <h1 class='text-6xl font-bold mb-4'>Alejo Hernán Janin</h1>
-      <p class='text-2xl'>Frontend Web Developer</p>
-    </section>
-    <section>
-      <h2>About me</h2>
-      <p></p>
-    </section>
-    <section>
-      <h2>Projects</h2>
-    </section>
-    <section>
-      <h2>Career</h2>
-    </section>
+  <main class='max-w-3xl mx-auto flex flex-col gap-8 scroll-smooth mt-12'>
+    <Hero />
+    <Projects />
+    <Experience />
+    <ContactForm />
   </main>
 </Layout>

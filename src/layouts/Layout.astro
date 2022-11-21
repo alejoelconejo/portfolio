@@ -4,10 +4,12 @@ export interface Props {
 }
 
 const { title } = Astro.props
+
+import '@fontsource/inter'
 ---
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='en' class='scroll-smooth'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
@@ -15,7 +17,7 @@ const { title } = Astro.props
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class='bg-violet-900 text-white'>
+  <body class='bg-[#222222] text-white'>
     <slot />
   </body>
 </html>
