@@ -1,3 +1,7 @@
+---
+import SocialMedia from './SocialMedia.astro'
+---
+
 <section
   class='flex flex-col-reverse md:flex-row items-start justify-between gap-8 mb-16'
 >
@@ -9,23 +13,7 @@
       la Información (orientación en Tecnología).
     </p>
     <div class='flex items-center mt-10 gap-16'>
-      <div class='flex gap-4 items-center'>
-        <a href='https://github.com/alejoelconejo' target='_blank'>
-          <img class='h-8 w-8' src='images/logos/github-logo.svg' />
-        </a>
-        <a
-          href='https://www.linkedin.com/in/alejo-hernan-janin/'
-          target='_blank'
-        >
-          <img class='h-8 w-8' src='images/logos/linkedin-logo.svg' />
-        </a>
-        <a
-          href='mailto:alejojanin@gmail.com?Subject=Propuesta%20laboral'
-          target='_blank'
-        >
-          <img class='h-8 w-8' src='images/logos/mail-logo.svg' />
-        </a>
-      </div>
+      <SocialMedia />
       <a href='' class='bg-[#f432cf] py-2 px-4 rounded-md'>Descargar CV</a>
     </div>
   </div>
