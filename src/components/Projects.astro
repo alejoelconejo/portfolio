@@ -5,51 +5,73 @@ const projects = [
     subtitle: 'Generador de memes',
     body: 'Aplicación para generar memes. Desarrollada con React + Tailwind CSS',
     web: 'https://memardo.vercel.app',
-    github: 'https://memardo.vercel.app',
+    github: 'https://github.com/alejoelconejo/scrimba-meme',
     imgDesktop: 'memardo-desktop.webp',
     imgMobile: 'memardo-mobile.webp',
+  },
+  {
+    title: '¡Navidad, Navidad!',
+    subtitle: 'Generador de memes',
+    body: 'Aplicación para generar memes. Desarrollada con React + CSS Vanilla',
+    web: 'https://navidad-regalos.vercel.app',
+    github: 'https://github.com/alejoelconejo/navidad-regalos',
+    imgDesktop: 'navidad-desktop.webp',
+    imgMobile: 'navidad-mobile.webp',
   },
 ]
 ---
 
-<section class='mb-16 flex flex-col gap-8' id='projects'>
+<section class='flex flex-col gap-8' id='projects'>
   <h2 class='text-4xl font-bold'>Proyectos</h2>
   {
-    projects.map((project) => (
-      <article class='bg-[#191919] flex p-8 rounded-md md:flex-row flex-col-reverse'>
-        <div class='flex-1'>
-          <h3 class='text-2xl'>{project.title}</h3>
-          <p class='text-gray-300 mb-4'>{project.subtitle}</p>
-          <p class='text-gray-300 mb-8'>{project.body}</p>
-          <div class='flex gap-8 text-gray-300'>
-            <a
-              class='flex gap-2 items-center border border-gray-300 py-1 px-3 rounded-md'
-              href={project.web}
-              target='_blank'
-            >
-              <img src='images/logos/web-logo.svg' class='h-4 w-4' /> Web
-            </a>
-            <a
-              class='flex gap-2 items-center border border-gray-300 py-1 px-3 rounded-md'
-              href={project.github}
-              target='_blank'
-            >
-              <img src='images/logos/github-logo.svg' class='h-4 w-4' />
-              Repo
-            </a>
+    projects.map(
+      ({ title, subtitle, body, web, github, imgDesktop, imgMobile }) => (
+        <article class='bg-[#191919] flex p-8 rounded-md md:flex-row flex-col-reverse md:gap-0 gap-4'>
+          <div class='flex-1'>
+            <h3 class='text-2xl'>{title}</h3>
+            <p class='text-gray-300 mb-4'>{subtitle}</p>
+            <p class='text-gray-300 mb-8'>{body}</p>
+            <div class='flex gap-8 text-gray-300 md:justify-start justify-around [&_a:hover]:opacity-80 [&_a]:transition-opacity [&_a]:duration-75'>
+              <a
+                class='flex gap-2 items-center border border-gray-300 py-1 px-3 rounded-md'
+                href={web}
+                target='_blank'
+              >
+                <img
+                  src='images/logos/web-logo.svg'
+                  class='h-4 w-4'
+                  alt={`${title} Web`}
+                />
+                Web
+              </a>
+              <a
+                class='flex gap-2 items-center border border-gray-300 py-1 px-3 rounded-md'
+                href={github}
+                target='_blank'
+              >
+                <img
+                  src='images/logos/github-logo.svg'
+                  class='h-4 w-4'
+                  alt={`${title} GitHub`}
+                />
+                Repo
+              </a>
+            </div>
           </div>
-        </div>
-        <div class='flex-1 relative'>
-          <img
-            src={`images/projects/${project.imgDesktop}`}
-            class='object-cover h-48 border-2 border-gray-300 rounded-md mb-6 mx-auto'
-          />
-          <img
-            src={`images/projects/${project.imgMobile}`}
-            class='object-contain h-28 border-2 border-gray-300 rounded-lg absolute bottom-0 right-4'
-          />
-        </div>
-      </article>
-    ))
+          <div class='flex-1 relative md:px-8 px-0'>
+            <img
+              src={`images/projects/${imgDesktop}`}
+              class='object-cover h-48 aspect-video border-2 border-gray-300 rounded-md mb-6 mx-auto'
+              alt={`${title} Desktop`}
+            />
+            <img
+              src={`images/projects/${imgMobile}`}
+              class='object-contain h-28 border-2 border-gray-300 rounded-lg absolute bottom-0 right-4'
+              alt={`${title} Mobile`}
+            />
+          </div>
+        </article>
+      )
+    )
   }
 </section>
