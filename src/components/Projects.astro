@@ -1,6 +1,15 @@
 ---
 const projects = [
   {
+    title: 'Filmica',
+    subtitle: 'Información sobre películas',
+    body: 'Aplicación con información de películas y series de TV. Desarrollada con Next.js + TypeScript + Firebase + Tailwind CSS',
+    web: 'https://filmica.vercel.app/',
+    github: 'https://github.com/alejoelconejo/filmica-next',
+    imgDesktop: 'filmica-desktop.webp',
+    imgMobile: 'filmica-mobile.webp',
+  },
+  {
     title: 'El Conejo Shop',
     subtitle: 'E-commerce',
     body: 'Aplicación para comprar productos de una tienda comercial. Desarrollada con React + TypeScript + Tailwind CSS',
@@ -68,11 +77,13 @@ const projects = [
             </div>
           </div>
           <div class='flex-1 relative md:px-8 px-0'>
-            <img
-              src={`images/projects/${imgDesktop}`}
-              class='object-cover h-48 aspect-video border-2 border-gray-300 rounded-md mb-6 mx-auto'
-              alt={`${title} Desktop`}
-            />
+            <a href={web} target='_blank'>
+              <img
+                src={`images/projects/${imgDesktop}`}
+                class='object-cover h-48 aspect-video border-2 border-gray-300 rounded-md mb-6 mx-auto hover:brightness-110 transition'
+                alt={`${title} Desktop`}
+              />
+            </a>
             <img
               src={`images/projects/${imgMobile}`}
               class='object-cover h-28 [aspect-ratio:11/20] border-2 border-gray-300 rounded-lg absolute bottom-0 right-4'
