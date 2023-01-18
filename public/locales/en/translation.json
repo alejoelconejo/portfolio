@@ -1,0 +1,57 @@
+{
+  "site": {
+    "title": "Alejo Hernán Janin - Portfolio",
+    "description": "Alejo Hernán Janin Portfolio"
+  },
+  "header": {
+    "projects": "Projects",
+    "experience": "Jobs",
+    "contact": "Contact"
+  },
+  "hero": {
+    "description": "Web Developer focused on React, JavaScript and TypeScript.",
+    "degree": "Library and Information Sciences Bachelor Degree (specialization on Information Technologies).",
+    "cv-button": "Download Resume"
+  },
+  "projects": {
+    "title": "Projects",
+    "project": {
+      "memardoTitle": "Memardo",
+      "memardoSubtitle": "Meme Generator",
+      "memardoDesc": "App to generate memes. Developed with React + TypeScript + Tailwind CSS",
+      "navidadTitle": "¡Christmas, ¡Christmas!",
+      "navidadSubtitle": "Christmas Gifts List",
+      "navidadDesc": "App to create a list of Christmas presents. Developed with React + TypeScript + CSS Vanilla",
+      "elconejoTitle": "El Conejo Shop",
+      "elconejoSubtitle": "E-commerce",
+      "elconejoDesc": "App to buy products on an e-commerce platform. Developed with React + TypeScript + Tailwind CSS",
+      "filmicaTitle": "Filmica",
+      "filmicaSubtitle": "Info about movies",
+      "filmicaDesc": "App with info about movies and tv shows. Developed with Next.js + TypeScript + Firebase + Tailwind CSS"
+    }
+  },
+  "experience": {
+    "title": "Jobs",
+    "job": {
+      "iiacTitle": "Archivist",
+      "iiacEmployer": "Archive of the Art and Culture Research Institute (UNTREF)",
+      "iiacBody": "Maintenance and development of enhancements to AtoM archival description software (HTML, CSS, JS, PHP). Identification, classification, indexing and cataloging of archival documents.",
+      "culturaTitle": "Librarian",
+      "culturaEmployer": "Ministry of Culture (Argentina)",
+      "culturaBody": "Advice on the implementation of the union catalog for museum libraries and national institutes. Planning, database migration and implementation of Koha software.",
+      "bnmmTitle": "Librarian",
+      "bnmmEmployer": "National Library of Argentina",
+      "bnmmBody": "Development, support and training for Aleph software."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "E-mail",
+    "msg": "Message",
+    "send": "Send"
+  },
+  "email": {
+    "subject": "Job%20Proposal"
+  }
+}

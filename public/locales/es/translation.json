@@ -1,0 +1,57 @@
+{
+  "site": {
+    "title": "Alejo Hernán Janin - Portfolio",
+    "description": "Alejo Hernán Janin Portfolio"
+  },
+  "header": {
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "description": "Desarrollador web especializado en React, JavaScript y TypeScript.",
+    "degree": "Lic. en Bibliotecología y Ciencia de la Información (orientación en Tecnología).",
+    "cv-button": "Descargar CV"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "project": {
+      "memardoTitle": "Memardo",
+      "memardoSubtitle": "Generador de memes",
+      "memardoDesc": "Aplicación para generar memes. Desarrollada con React + TypeScript + Tailwind CSS",
+      "navidadTitle": "¡Navidad, Navidad!",
+      "navidadSubtitle": "Listado de regalos para Navidad",
+      "navidadDesc": "Aplicación para crear un listado de regalos navideños. Desarrollada con React + TypeScript + CSS Vanilla",
+      "elconejoTitle": "El Conejo Shop",
+      "elconejoSubtitle": "E-commerce",
+      "elconejoDesc": "Aplicación para comprar productos de una tienda comercial. Desarrollada con React + TypeScript + Tailwind CSS",
+      "filmicaTitle": "Filmica",
+      "filmicaSubtitle": "Información sobre películas",
+      "filmicaDesc": "Aplicación con información de películas y series de TV. Desarrollada con Next.js + TypeScript + Firebase + Tailwind CSS"
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "job": {
+      "iiacTitle": "Archivista",
+      "iiacEmployer": "Archivo del Instituto de Investigaciones en Arte y Cultura (UNTREF)",
+      "iiacBody": "Mantenimiento y desarrollo de mejoras del software para descripción archivística AtoM (HTML, CSS, JS, PHP). Identificación, clasificación, indización y catalogación de documentos de archivo.",
+      "culturaTitle": "Bibliotecario",
+      "culturaEmployer": "Ministerio de Cultura (Argentina)",
+      "culturaBody": "Asesoría en implementación del catálogo colectivo para bibliotecas de museos e institutos nacionales. Planificación, migración de bases de datos e implementación del software Koha.",
+      "bnmmTitle": "Bibliotecario",
+      "bnmmEmployer": "Biblioteca Nacional Mariano Moreno",
+      "bnmmBody": "Desarrollo, soporte y capacitación para el software Aleph."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "E-mail",
+    "msg": "Mensaje",
+    "send": "Enviar"
+  },
+  "email": {
+    "subject": "Propuesta%20laboral"
+  }
+}

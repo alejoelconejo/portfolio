@@ -1,36 +1,38 @@
 ---
+import { t } from 'i18next'
+
 const projects = [
   {
-    title: 'Filmica',
-    subtitle: 'Información sobre películas',
-    body: 'Aplicación con información de películas y series de TV. Desarrollada con Next.js + TypeScript + Firebase + Tailwind CSS',
+    title: t('projects.project.filmicaTitle'),
+    subtitle: t('projects.project.filmicaSubtitle'),
+    body: t('projects.project.filmicaDesc'),
     web: 'https://filmica.vercel.app/',
     github: 'https://github.com/alejoelconejo/filmica-next',
     imgDesktop: 'filmica-desktop.webp',
     imgMobile: 'filmica-mobile.webp',
   },
   {
-    title: 'El Conejo Shop',
-    subtitle: 'E-commerce',
-    body: 'Aplicación para comprar productos de una tienda comercial. Desarrollada con React + TypeScript + Tailwind CSS',
+    title: t('projects.project.elconejoTitle'),
+    subtitle: t('projects.project.elconejoSubtitle'),
+    body: t('projects.project.elconejoDesc'),
     web: 'https://elconejoshop.vercel.app/',
     github: 'https://github.com/alejoelconejo/ecommerce-experiment',
     imgDesktop: 'elconejoshop-desktop.webp',
     imgMobile: 'elconejoshop-mobile.webp',
   },
   {
-    title: '¡Navidad, Navidad!',
-    subtitle: 'Listado de regalos para Navidad',
-    body: 'Aplicación para crear un listado de regalos navideños. Desarrollada con React + TypeScript + CSS Vanilla',
+    title: t('projects.project.navidadTitle'),
+    subtitle: t('projects.project.navidadSubtitle'),
+    body: t('projects.project.navidadDesc'),
     web: 'https://navidad-regalos.vercel.app',
     github: 'https://github.com/alejoelconejo/navidad-regalos',
     imgDesktop: 'navidad-desktop.webp',
     imgMobile: 'navidad-mobile.webp',
   },
   {
-    title: 'Memardo',
-    subtitle: 'Generador de memes',
-    body: 'Aplicación para generar memes. Desarrollada con React + TypeScript + Tailwind CSS',
+    title: t('projects.project.memardoTitle'),
+    subtitle: t('projects.project.memardoSubtitle'),
+    body: t('projects.project.memardoDesc'),
     web: 'https://memardo.vercel.app',
     github: 'https://github.com/alejoelconejo/scrimba-meme',
     imgDesktop: 'memardo-desktop.webp',
@@ -40,7 +42,7 @@ const projects = [
 ---
 
 <section class='flex flex-col gap-8' id='projects'>
-  <h2 class='text-4xl font-bold'>Proyectos</h2>
+  <h2 class='text-4xl font-bold'>{t('projects.title')}</h2>
   {
     projects.map(
       ({ title, subtitle, body, web, github, imgDesktop, imgMobile }) => (

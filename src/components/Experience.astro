@@ -1,29 +1,30 @@
 ---
+import { t } from 'i18next'
+
 const experience = [
   {
     date: 'Mar 2021 - actualidad',
-    title: 'Archivista',
-    employer:
-    'Archivo del Instituto de Investigaciones en Arte y Cultura (UNTREF)',
-    body: 'Mantenimiento y desarrollo de mejoras del software para descripción archivística AtoM (HTML, CSS, JS, PHP). Identificación, clasificación, indización y catalogación de documentos de archivo.',
+    title: t('experience.job.iiacTitle'),
+    employer: t('experience.job.iiacEmployer'),
+    body: t('experience.job.iiacBody'),
   },
   {
     date: 'Sep 2020 - actualidad',
-    title: 'Bibliotecario',
-    employer: 'Ministerio de Cultura (Argentina)',
-    body: 'Asesoría en implementación del catálogo colectivo para bibliotecas de museos e institutos nacionales. Planificación, migración de bases de datos e implementación del software Koha.',
+    title: t('experience.job.culturaTitle'),
+    employer: t('experience.job.culturaEmployer'),
+    body: t('experience.job.culturaBody'),
   },
   {
     date: 'Oct 2021 - Dic 2022',
-    title: 'Bibliotecario',
-    employer: 'Biblioteca Nacional Mariano Moreno',
-    body: 'Desarrollo, soporte y capacitación para el software Aleph.',
+    title: t('experience.job.bnmmTitle'),
+    employer: t('experience.job.bnmmEmployer'),
+    body: t('experience.job.bnmmBody'),
   },
 ]
 ---
 
 <section id='experience'>
-  <h2 class='text-4xl font-bold mb-8'>Experiencia</h2>
+  <h2 class='text-4xl font-bold mb-8'>{t('experience.title')}</h2>
   <ol class='relative border-l border-gray-400 mt-4 mx-2 flex flex-col gap-4'>
     {
       experience.map((exp) => (

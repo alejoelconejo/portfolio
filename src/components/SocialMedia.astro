@@ -1,3 +1,7 @@
+---
+import { t } from 'i18next'
+---
+
 <div
   class='flex gap-4 items-center shrink-0 [&_img:hover]:opacity-80 [&_img]:transition-opacity [&_img]:duration-75'
 >
@@ -18,7 +22,7 @@
     />
   </a>
   <a
-    href='mailto:alejojanin@gmail.com?Subject=Propuesta%20laboral'
+    href={`mailto:alejojanin@gmail.com?Subject=${t('email.subject')}`}
     target='_blank'
   >
     <img
